@@ -14,8 +14,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="the blog of 六一">
-  <meta name="author" content="John Doe">
+  <meta name="description" content="">
+  <meta name="author" content="61">
   <meta name="keywords" content="">
   <title>Archives - 言锡✎</title>
 
@@ -222,6 +222,29 @@
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'list',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"所念皆星河","artist":"纯音乐","url":"/songs/所念皆星河.mp3","cover":"/img/cover.jpg"},{"name":"Lost Game","artist":"Nulbarich","url":"songs/Lost Game.mp3","cover":"https://...cover.jpg"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -278,7 +301,7 @@
         '  ',
         "Archive&nbsp;",
       ],
-      cursorChar: "_",
+      cursorChar: "|",
       typeSpeed: 70,
       loop: false,
     });
