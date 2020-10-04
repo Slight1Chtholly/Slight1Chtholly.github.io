@@ -17,10 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="61">
   <meta name="keywords" content="">
-  <title>Archives - 言锡✎</title>
+  <title>言锡✎</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -43,7 +56,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,6 +160,43 @@
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-10-04 09:22" pubdate>
+        October 4, 2020 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      103 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
           
@@ -157,43 +207,94 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">2 posts in total.</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/10/04/Markdown%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title"></span>
-      <time style="float: right;">10-04</time>
-    </a>
-  
-    
-    <a href="/2020/09/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">我的第一篇博客文章</span>
-      <time style="float: right;">09-24</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="markdown-操作说明"><a class="markdownIt-Anchor" href="#markdown-操作说明">#</a> Markdown 操作说明</h1>
+<h2 id="图片插入"><a class="markdownIt-Anchor" href="#图片插入">#</a> 图片插入</h2>
+<pre><code class="hljs markdown">![<span class="hljs-string">example</span>](<span class="hljs-link">./assets/example.png</span>)</code></pre>
+<p><img src="./assets/example.png" srcset="/img/loading.gif" alt="example"></p>
+<h2 id="代码插入"><a class="markdownIt-Anchor" href="#代码插入">#</a> 代码插入</h2>
+<pre><code class="hljs autohotkey">/```
+之间输入代码（去掉斜杠&#x27;/&#x27;）
+```/</code></pre>
+<pre><code class="hljs javascript">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;
+    alert(<span class="hljs-string">&#x27;RUNOOB&#x27;</span>);
+&#125;);</code></pre>
+<h1 id="一级标题"><a class="markdownIt-Anchor" href="#一级标题">#</a> 一级标题</h1>
+<h2 id="二级标题"><a class="markdownIt-Anchor" href="#二级标题">#</a> 二级标题</h2>
+<h3 id="三级标题"><a class="markdownIt-Anchor" href="#三级标题">#</a> 三级标题</h3>
+<h4 id="四级标题"><a class="markdownIt-Anchor" href="#四级标题">#</a> 四级标题</h4>
+<h5 id="五级标题"><a class="markdownIt-Anchor" href="#五级标题">#</a> 五级标题</h5>
+<h6 id="六级标题"><a class="markdownIt-Anchor" href="#六级标题">#</a> 六级标题</h6>
+<p><em>斜体文本</em><br>
+<em>斜体文本</em><br>
+<strong>粗体文本</strong><br>
+<strong>粗体文本</strong></p>
+<p>// 换行解释：在文末加两个空格 或两文本行中间空行<br>
+操作说明<br>
+<img src="./assets/%E8%AF%AD%E4%B9%89%E6%A0%87%E7%AD%BE.png" srcset="/img/loading.gif" alt="操作说明"></p>
 
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/09/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
+                        <span class="hidden-mobile">我的第一篇博客文章</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -298,6 +399,31 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -305,7 +431,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Archive&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
@@ -320,6 +446,21 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
 
 
   <script  src="/js/local-search.js" ></script>
@@ -333,6 +474,20 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
 
 
 
